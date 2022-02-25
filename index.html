@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Assignment - A00456832</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Safari Support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#9900FE">
+  <meta name="apple-mobile-web-app-title" content="PWAGram">
+  <link type="apple-touch-icon" href="/icons/smu-icon-48x48.png" size="48x48">
+  <link type="apple-touch-icon" href="/icons/smu-icon-72x72.png" size="72x72">
+  <link type="apple-touch-icon" href="/icons/smu-icon-96x96.png" size="96x96">
+  <link type="apple-touch-icon" href="/icons/smu-icon-144x144.png" size="144x144">
+  <link type="apple-touch-icon" href="/icons/smu-icon-192x192.png" size="192x192">
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <img src="./smu-icon-96x96.png" width="75px" />
+    </div>
+    <div>
+      <h2>To Do Tracker - Application</h2>
+      <h6>Imtiyaz Shaikh (A00456832)</h6>
+    </div>
+  </div>
+  
+  
+  <form>
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="taskName">Task Name</label>
+      <input type="text" id="taskName" name="taskName" class="form-control" />
+    </div>
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="dueDate">Due Date</label>
+      <input  type="date" id="dueDate" name="dueDate" class="form-control" />
+    </div>
+
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="assignedTo">Assign To</label>
+      <input type="text" id="assignedTo" name="assignedTo" class="form-control" />
+    </div>
+
+    <!-- Submit button -->
+    <input type="submit" value="Save">
+  </form>
+  <hr />
+  <div id="assingments"></div>
+
+
+
+</body>
+
+<script src="/node_modules/dexie/dist/dexie.js"></script>
+<script src="/db.js"></script>
+<script src="/script.js"></script>
+
+</html>
